@@ -92,7 +92,6 @@ def query_repository_issues(since: str, token: str) -> dict:
                 if login not in contributors:
                     contributors[login] = 0
                 contributors[login] += 1
-            #print(f'https://github.com/osrf/ros2_test_cases/issues/{issue["number"]} : {assignees}')
 
         page_info = results['pageInfo']
         if page_info['hasNextPage']:
